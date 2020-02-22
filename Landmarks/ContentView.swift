@@ -10,10 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading){ //Added Manually due to no editing popover option
+        VStack(alignment: .leading){    //Added Manually due to no editing popover option
             Text("Turtle Rock")
                 .font(.title)
+            HStack {    //Added Manually due to no editing popover option
             Text("Joshua Tree National Park")
+                .font(.subheadline)}
+            Text("Cali")
                 .font(.subheadline)
         }
     }
