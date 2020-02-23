@@ -14,11 +14,15 @@ struct ContentView: View {
             Text("Turtle Rock")
                 .font(.title)
             HStack {    //Added Manually due to no editing popover option
-            Text("Joshua Tree National Park")
-                .font(.subheadline)}
-            Text("Cali")
-                .font(.subheadline)
+                Text("Joshua Tree National Park")
+                    
+                    .font(.subheadline)
+                Spacer() //"A spacer expands to make its containing view use all of the space of its parent view, instead of having its size defined only by its contents."
+                Text("California")
+                    .font(.subheadline)
+            }
         }
+        .padding()
     }
 }
 
