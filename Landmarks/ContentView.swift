@@ -12,9 +12,13 @@ struct ContentView: View {
     var body: some View {
         VStack  {
             MapView()
+                .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
             
             CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            
             
             VStack(alignment: .leading){    //Added Manually due to no editing popover option
                 Text("Turtle Rock")
@@ -29,8 +33,9 @@ struct ContentView: View {
                 }
             }
             .padding()
+            
+            Spacer()
         }
-        
     }
 }
 
