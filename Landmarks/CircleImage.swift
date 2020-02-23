@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("turtlerock.jpg")
+        Image("turtlerock")
             .clipShape(Circle())
             .overlay(
                 Circle().stroke(Color.white, lineWidth: 4)) //This creates a 2nd circle to act as a border.
@@ -23,3 +23,5 @@ struct CircleImage_Previews: PreviewProvider {
         CircleImage()
     }
 }
+
+//Currently INOP; return later. 
